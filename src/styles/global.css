@@ -1,21 +1,75 @@
+@import './variables.css';
+
 @tailwind base;
-
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
-
 @tailwind components;
-
 @tailwind utilities;
 
-.content p {
-  @apply my-6;
+@layer base {
+  :root {
+    --border: 240, 5.9%, 90%;
+    --input: 240, 5.9%, 90%;
+    --ring: 240, 5.9%, 10%;
+    --radius: 0.5rem;
+
+    --header-h: 6.375rem;
+
+    --success: 155, 100%, 37%;
+    --success-light: 156, 56%, 80%;
+
+    --error: 14, 100%, 56%;
+    --error-light: 15, 100%, 93%;
+
+    --warning: 40, 100%, 56%;
+    --warning-light: 40, 100%, 93%;
+
+    --info: 225, 98%, 35%;
+    --info-light: 227, 56%, 94%;
+
+    --divider: 240, 85%, 90%;
+  }
+
+  @font-face {
+    font-family: 'source-sans';
+    src: url('/fonts/satic/SourceSans3-Regular.woff') format('tff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'source-sans';
+    src: url('/fonts/satic/SourceSans3-Bold.woff') format('tff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'source-sans';
+    src: url('/fonts/satic/SourceSans3-SemiBold.woff') format('tff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  body {
+    color: var(--fg) !important;
+    background-color: var(--bg) !important;
+    font-family: 'Nunito', sans-serif;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }
 
-.content ul {
-  @apply my-6;
+.is-sticky {
+  animation: slideDown 0.5s ease-out;
+  background-color: #fff;
+  box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
