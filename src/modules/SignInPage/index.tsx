@@ -63,12 +63,12 @@ export default function LoginPage() {
             <Form.Item>
               <Row>
                 <Col span={24}>
-                  <Link href="/auth/sign-up">
+                  <Link href="/home">
                     <Button
                       type="primary"
                       htmlType="submit"
                       loading={loading}
-                      style={{ width: '100%' }}
+                      className="w-full"
                     >
                       Sign In
                     </Button>

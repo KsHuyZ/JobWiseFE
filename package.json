@@ -31,8 +31,10 @@
     "@hookform/resolvers": "^3.3.2",
     "@libsql/client": "^0.3.6",
     "@t3-oss/env-nextjs": "^0.7.1",
+    "@tanstack/react-query": "^5.8.1",
     "antd": "^5.10.3",
     "axios": "^1.6.0",
+    "dayjs": "^1.11.10",
     "drizzle-orm": "^0.28.6",
     "next": "^14.0.0",
     "next-seo": "^6.4.0",
@@ -40,6 +42,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.47.0",
+    "react-icons": "^4.11.0",
     "sharp": "^0.32.6",
     "zod": "^3.22.4"
   },

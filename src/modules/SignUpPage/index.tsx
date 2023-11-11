@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 
 import provinceApi from '@/api/provinceApi';
 import { GithubIcon, GoogleIcon } from '@/assets/icons';
-import useDebounce from '@/hooks';
+import { useDebounce } from '@/hooks';
 import { validateEmail } from '@/utils';
 
 const { getProvince } = provinceApi;

@@ -31,7 +31,7 @@ const ThemeProvider: FCC = ({ children }) => {
           Input: {
             activeBorderColor: 'var(--primary-color)',
             hoverBorderColor: 'var(--primary-color)',
-            activeShadow: 'var(--primary-color)',
+            activeShadow: '#00695c',
           },
           Modal: {},
           Button: {

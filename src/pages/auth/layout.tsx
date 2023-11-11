@@ -6,10 +6,5 @@ export default function AuthLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <Layout>
-      ahihi
-      {children}
-    </Layout>
-  );
+  return <Layout>{children}</Layout>;
 }

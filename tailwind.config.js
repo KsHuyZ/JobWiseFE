@@ -16,6 +16,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: {
+          DEFAULT: 'var(--primary-color)',
+          foreground: 'var(--text-color)',
+        },
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
